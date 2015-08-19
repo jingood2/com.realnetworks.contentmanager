@@ -1,0 +1,25 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "recordStorage": {
+    "name": "recordStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage/records"
+  },
+  "mentStorage": {
+    "name": "mentStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage/ments"
+  },
+  "imageStorage": {
+    "name": "imageStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "./server/storage/images"
+  }
+
+}
