@@ -30,5 +30,14 @@ module.exports = function(agenda) {
 
         done();
     });
+
+    agenda.define('mp3 converting to wav', function(job,done){
+      _.each(job.attrs.data.files,function(file){
+
+        filePath = conf.CMSBaseDir + '/ments/' + file.container + '/';
+        pullname = filePath + file.name;
+
+      });
+    })
 }
 

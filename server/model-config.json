@@ -8,7 +8,8 @@
     ]
   },
   "User": {
-    "dataSource": "db"
+    "dataSource": "db",
+    "public": false
   },
   "AccessToken": {
     "dataSource": "db",
@@ -26,16 +27,15 @@
     "dataSource": "db",
     "public": false
   },
-  "mentStorage": {
+  "mentStorage" : {
     "dataSource": "mentStorage",
-    "public": true
+    "public" : true
   },
-  "recordStorage": {
+  "recordStorage" : {
     "dataSource": "recordStorage",
-    "public": true
-  },
-  "imageStorage": {
-    "dataSource": "imageStorage",
-    "public": true
+    "public" : true
   }
+
+
+
 }

@@ -9,8 +9,9 @@ var version = p.version.split('.').shift();
 
 var conf = {
     hostname: '0.0.0.0',
-    port: 4100,
+    port: 3003,
     //restApiRoot: '/api' + (version > 0 ? '/v' + version : '') , // The path where to mount the REST API app
+    restApiRoot: '/api', // The path where to mount the REST API app
     legacyExplorer: false
 };
 
@@ -25,7 +26,7 @@ conf.restApiUrl = url.format({
     pathname: conf.restApiRoot
 });
 
-conf.CMSBaseDir = './server/storage';
+conf.CMSBaseDir = './storage';
 
 conf.ffmpegAudioArgs = {
     codec: 'pcm_mulaw',
@@ -35,7 +36,7 @@ conf.ffmpegAudioArgs = {
 };
 
 conf.agendaDB = {
-    host: 'localhost',
+    host: '0.0.0.0',
     port: 27017,
     database: 'callPlanner_db2'
 };

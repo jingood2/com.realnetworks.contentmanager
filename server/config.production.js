@@ -23,12 +23,7 @@ module.exports = {
         rest: { normalizeHttpPath: false, xml: false }
     },
 
-	amazon: {
-		key: 'mtWL56b8AvPt6L6DKMFxBIC8P8OyPhPomBw2W8Ti',
-		keyId: 'AKIAJKQJTBPISRW5O5RQ'
-	},
-
-    agendaHost : '192.168.100.14',
+    agendaHost : '172.17.0.26',
     agendaPort : 27017,
     agendaDB : 'contentmanager_db',
 

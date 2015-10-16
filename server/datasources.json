@@ -3,23 +3,16 @@
     "name": "db",
     "connector": "memory"
   },
-  "recordStorage": {
-    "name": "recordStorage",
+  "mentStorage" : {
+    "name" : "mentStorage",
     "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./server/storage/records"
+    "provider" : "filesystem",
+    "root": "./storage/ments"
   },
-  "mentStorage": {
-    "name": "mentStorage",
+  "recordStorage" : {
+    "name" : "recordStorage",
     "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./server/storage/ments"
-  },
-  "imageStorage": {
-    "name": "imageStorage",
-    "connector": "loopback-component-storage",
-    "provider": "filesystem",
-    "root": "./server/storage/images"
+    "provider" : "filesystem",
+    "root": "./storage/records"
   }
-
 }
