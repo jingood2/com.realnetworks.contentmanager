@@ -1,0 +1,18 @@
+{
+  "db": {
+    "name": "db",
+    "connector": "memory"
+  },
+  "mentStorage": {
+    "name": "mentStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "/home/strong-pm/storage/ments"
+  },
+  "recordStorage": {
+    "name": "recordStorage",
+    "connector": "loopback-component-storage",
+    "provider": "filesystem",
+    "root": "/home/strong-pm/storage/records"
+  }
+}

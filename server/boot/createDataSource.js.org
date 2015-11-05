@@ -1,5 +1,5 @@
-module.exports = function(server) { 
-  	// code to set up data source as shown above 
+module.exports = function(server) {
+  	// code to set up data source as shown above
 
 	var path = require('path');
 
@@ -17,7 +17,7 @@ module.exports = function(server) {
 		//key: 'daDLV8EWVKrmGKTqH8Gta3GLy98P9eZzvWnTlfcy',
 		//keyId: 'AKIAIHVAYPAACHECVEQA'
 	});
- 
+
 	var container = ds.createModel('mentstorage');
 	server.model(container);
 
@@ -29,8 +29,9 @@ module.exports = function(server) {
 		//key: 'daDLV8EWVKrmGKTqH8Gta3GLy98P9eZzvWnTlfcy',
 		//keyId: 'AKIAIHVAYPAACHECVEQA'
 	});
- 
+
 	var container = ds.createModel('recordstorage');
 	server.model(container);
+
 };
 

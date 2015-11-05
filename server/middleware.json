@@ -4,7 +4,9 @@
   },
   "initial": {
     "compression": {},
-    "morgan": {"params": "combined"},
+    "morgan": {
+      "params": "combined"
+    },
     "cors": {
       "params": {
         "origin": true,
@@ -13,21 +15,35 @@
       }
     }
   },
-  "session": {
+  "session": {},
+  "auth": {},
+  "parse": {
+    "body-parser#json": {},
+    "body-parser#urlencoded": {
+      "params": {
+        "extended": true
+      }
+    },
+    "body-parser#raw": {}
   },
-  "auth": {
-  },
-  "parse": { 
-	"body-parser#json" : {},
-    "body-parser#urlencoded" : {"params" : {"extended" : true }},
-    "body-parser#raw" : {}	
-  },
-  "routes": {
-  },
+  "routes": {},
   "files": {
-	"loopback#static" : {
-		"params" : "$!../client"
-	}
+    "loopback#static" : [{
+      "name" : "app",
+      "paths" : ["/"],
+      "params" : "$!../client"
+    },
+      {
+        "name" : "ments",
+        "paths" : ["/ments"],
+        "params" : "/home/strong-pm/storage/ments"
+      },
+      {
+        "name" : "records",
+        "paths" : ["/records"],
+        "params" : "/home/strong-pm/storage/records"
+      }
+    ]
   },
   "final": {
     "loopback#urlNotFound": {}

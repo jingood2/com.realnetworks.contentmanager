@@ -27,15 +27,12 @@
     "dataSource": "db",
     "public": false
   },
-  "mentStorage" : {
+  "mentStorage": {
     "dataSource": "mentStorage",
-    "public" : true
+    "public": true
   },
-  "recordStorage" : {
+  "recordStorage": {
     "dataSource": "recordStorage",
-    "public" : true
+    "public": true
   }
-
-
-
 }

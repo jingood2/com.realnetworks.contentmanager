@@ -2,17 +2,5 @@
   "db": {
     "name": "db",
     "connector": "memory"
-  },
-  "mentStorage" : {
-    "name" : "mentStorage",
-    "connector": "loopback-component-storage",
-    "provider" : "filesystem",
-    "root": "./storage/ments"
-  },
-  "recordStorage" : {
-    "name" : "recordStorage",
-    "connector": "loopback-component-storage",
-    "provider" : "filesystem",
-    "root": "./storage/records"
   }
 }

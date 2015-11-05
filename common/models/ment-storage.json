@@ -1,13 +1,9 @@
 {
   "name": "mentStorage",
-  "base": "PersistedModel",
-  "idInjection": true,
-  "options": {
-    "validateUpsert": true
-  },
+  "base": "Model",
   "properties": {},
   "validations": [],
   "relations": {},
   "acls": [],
-  "methods": []
+  "methods": {}
 }

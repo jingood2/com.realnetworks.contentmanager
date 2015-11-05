@@ -26,6 +26,7 @@ conf.restApiUrl = url.format({
     pathname: conf.restApiRoot
 });
 
+//conf.CMSBaseDir = '/home/strong-pm/storage';
 conf.CMSBaseDir = './storage';
 
 conf.ffmpegAudioArgs = {
@@ -36,7 +37,8 @@ conf.ffmpegAudioArgs = {
 };
 
 conf.agendaDB = {
-    host: '0.0.0.0',
+    host: 'docker_mongodb_1',
+    //host: '0.0.0.0',
     port: 27017,
     database: 'callPlanner_db2'
 };

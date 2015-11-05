@@ -3,7 +3,6 @@ var re = /(?:\.([^.]+))?$/;
 
 module.exports = function(mentStorage) {
 
-
     mentStorage.afterRemote('upload',function(ctx,instance,next){
 
         var ext;
@@ -14,7 +13,6 @@ module.exports = function(mentStorage) {
             console.log('File extension is not wav. Converting to wav....');
             agenda.now('3gp converting to wav', {files: ctx.result.result.files.file});
         }
-        //agenda.now('3gp converting to wav', {files: ctx.result.result.files.file});
         next();
     });
 

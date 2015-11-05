@@ -7,6 +7,7 @@ var GLOBAL_CONFIG = require('../global-config');
 var isDevEnv = (process.env.NODE_ENV || 'development') === 'development';
 
 module.exports = {
+    host: '0.0.0.0',
     port: GLOBAL_CONFIG.port,
     hostname: GLOBAL_CONFIG.hostname,
     restApiRoot: GLOBAL_CONFIG.restApiRoot,
@@ -21,12 +22,5 @@ module.exports = {
         urlencoded: { extended: true, limit: '100kb'},
         context: { enableHttpContext: false },
         rest: { normalizeHttpPath: false, xml: false }
-    },
-
-    agendaHost : '172.17.0.26',
-    agendaPort : 27017,
-    agendaDB : 'contentmanager_db',
-
-    CMSBaseDir : './storage'
-
+    }
 };
