@@ -23,4 +23,5 @@ module.exports = {
         context: { enableHttpContext: false },
         rest: { normalizeHttpPath: false, xml: false }
     }
+
 };

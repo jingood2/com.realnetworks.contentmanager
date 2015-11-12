@@ -36,12 +36,12 @@
       {
         "name" : "ments",
         "paths" : ["/ments"],
-        "params" : "/home/strong-pm/storage/ments"
+        "params" : "/data/storage/ments"
       },
       {
         "name" : "records",
         "paths" : ["/records"],
-        "params" : "/home/strong-pm/storage/records"
+        "params" : "/data/storage/records"
       }
     ]
   },

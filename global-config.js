@@ -7,9 +7,11 @@ var p = require('./package.json');
 
 var version = p.version.split('.').shift();
 
+var isDevEnv = (process.env.NODE_ENV || 'production') === 'production';
+
 var conf = {
     hostname: '0.0.0.0',
-    port: 3003,
+    port: 3001,
     //restApiRoot: '/api' + (version > 0 ? '/v' + version : '') , // The path where to mount the REST API app
     restApiRoot: '/api', // The path where to mount the REST API app
     legacyExplorer: false
@@ -26,8 +28,7 @@ conf.restApiUrl = url.format({
     pathname: conf.restApiRoot
 });
 
-//conf.CMSBaseDir = '/home/strong-pm/storage';
-conf.CMSBaseDir = './storage';
+conf.CMSBaseDir = '/data/storage';
 
 conf.ffmpegAudioArgs = {
     codec: 'pcm_mulaw',
@@ -37,8 +38,7 @@ conf.ffmpegAudioArgs = {
 };
 
 conf.agendaDB = {
-    host: 'docker_mongodb_1',
-    //host: '0.0.0.0',
+    host: isDevEnv ? 'callplanner_db_1': 'localhost',
     port: 27017,
     database: 'callPlanner_db2'
 };
