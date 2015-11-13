@@ -38,7 +38,7 @@ conf.ffmpegAudioArgs = {
 };
 
 conf.agendaDB = {
-    host: isDevEnv ? 'callplanner_db_1': 'localhost',
+    host: isDevEnv ? 'docker_db_1': 'localhost',
     port: 27017,
     database: 'callPlanner_db2'
 };
