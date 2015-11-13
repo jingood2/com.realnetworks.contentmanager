@@ -7,12 +7,12 @@
     "name": "mentStorage",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "./storage/ments"
+    "root": "/data/storage/ments"
   },
   "recordStorage": {
     "name": "recordStorage",
     "connector": "loopback-component-storage",
     "provider": "filesystem",
-    "root": "./storage/records"
+    "root": "/data/storage/records"
   }
 }

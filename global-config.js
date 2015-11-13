@@ -28,7 +28,7 @@ conf.restApiUrl = url.format({
     pathname: conf.restApiRoot
 });
 
-conf.CMSBaseDir = './storage';
+conf.CMSBaseDir = '/data/storage';
 
 conf.ffmpegAudioArgs = {
     codec: 'pcm_mulaw',
